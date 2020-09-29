@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  background-color: #eed600;
+  height: 64px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav #menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav #menu div {
+  height: 100%;
+  width: 200px;
+  background-color: #333;
+  text-align: center;
+}
+
+nav #menu div a {
+  color: #eed600;
+}
+
+#content {
+  height: 100vh;
+  background-color: #333;
+}
+
+#content h1 {
+  font-size: 4em;
+  padding-top: 200px;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=layout.css.map */
