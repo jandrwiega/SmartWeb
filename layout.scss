@@ -68,6 +68,7 @@ nav {
     font-family: 'Quicksand', sans-serif;
     font-size: $def-font-size;
     overflow: hidden;
+    z-index: 100;
     p{
         color: black;
         font-size: $bigger-font-size;
@@ -110,4 +111,14 @@ nav {
         }  
     }
 
+}
+
+#cover {
+    top:-200vh;
+    z-index: 99;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    filter: blur(200px);
 }

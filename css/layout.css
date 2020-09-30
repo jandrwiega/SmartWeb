@@ -71,6 +71,7 @@ nav #menu div a {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.2rem;
   overflow: hidden;
+  z-index: 100;
 }
 
 #login p {
@@ -123,5 +124,16 @@ nav #menu div a {
 
 #login form #submit:hover {
   background-color: white;
+}
+
+#cover {
+  top: -200vh;
+  z-index: 99;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
 }
 /*# sourceMappingURL=layout.css.map */
