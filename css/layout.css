@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Quicksand:wght@500&family=Roboto:wght@300&display=swap);
+/*
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +12,7 @@
 nav {
   position: absolute;
   top: 0;
-  background-color: #eed600;
+  background-color: #B7CE22;
   height: 64px;
   width: 100vw;
   display: -webkit-box;
@@ -34,22 +40,88 @@ nav #menu {
 nav #menu div {
   height: 100%;
   width: 200px;
-  background-color: #333;
+  background-color: #787878;
   text-align: center;
 }
 
 nav #menu div a {
-  color: #eed600;
+  color: #B7CE22;
 }
 
 #content {
   height: 100vh;
-  background-color: #333;
+  background-color: #787878;
 }
 
 #content h1 {
   font-size: 4em;
   padding-top: 200px;
   color: whitesmoke;
+}
+
+#login {
+  position: absolute;
+  background-color: #A8C08C;
+  height: 200px;
+  width: 420px;
+  -webkit-box-shadow: 2px 2px 4px 0px black;
+          box-shadow: 2px 2px 4px 0px black;
+  margin: 100px;
+  color: whitesmoke;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+
+#login p {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+}
+
+#login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#login form .logincnt {
+  width: 240px;
+  margin: auto;
+}
+
+#login form input {
+  background-color: white;
+  border: none;
+  cursor: text;
+  outline: none;
+  height: 24px;
+  width: 240px;
+  border-radius: 0;
+  font-size: 1.2rem;
+}
+
+#login form label {
+  color: black;
+}
+
+#login form #submit {
+  background-color: #E5EF9F;
+  cursor: pointer;
+  height: 24px;
+  width: 120px;
+  margin: 12px 90px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#login form #submit:hover {
+  background-color: white;
 }
 /*# sourceMappingURL=layout.css.map */

@@ -1,5 +1,21 @@
-$bg-main-color: #333;
-$nav_bar_color: rgb(238, 214, 0);
+//google fonts
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Quicksand:wght@500&family=Roboto:wght@300&display=swap);
+/*
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+//variables
+$bg-main-color: #787878;
+$nav_bar_color: #B7CE22;
+$third-color: #8DB061;
+$lightgreen: #E5EF9F;
+$another-green: #A8C08C;
+$box-login-height: 200px;
+$box-login-width: 420px;
+$def-font-size: 1.2rem;
+$bigger-font-size: 3rem;
 
 * {
     margin: 0;
@@ -39,4 +55,59 @@ nav {
         padding-top: 200px;
         color: whitesmoke;
     }
+}
+
+#login {
+    position: absolute;
+    background-color: $another-green;
+    height: $box-login-height;
+    width: $box-login-width;
+    box-shadow: 2px 2px 4px 0px black;
+    margin: 100px;
+    color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;
+    font-size: $def-font-size;
+    overflow: hidden;
+    p{
+        color: black;
+        font-size: $bigger-font-size;
+        text-align: center;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: bold;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        .logincnt{
+            width: 240px;
+            margin: auto;
+        }
+
+        input{
+            background-color: white;
+            border: none;
+            cursor: text;
+            outline: none;
+            height: 24px;
+            width: 240px;
+            border-radius: 0;
+            font-size: $def-font-size;
+        }
+        label{
+            color: black;
+        }
+         #submit{
+            background-color: $lightgreen;
+            cursor: pointer;
+            height: 24px;
+            width: 120px;
+            margin: 12px 90px;
+            align-self: flex-end;
+
+            &:hover {
+                background-color: white;
+            }
+        }  
+    }
+
 }
